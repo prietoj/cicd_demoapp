@@ -25,4 +25,8 @@ deploy:
             password: 1vtG@lw@y
         urls:
             - https://mantlsandbox.cisco.com/marathon/v2/apps/class/prietoj/restart?force=true
-
+notify:
+    spark:
+        image: hpreston/drone-spark
+        auth_token: ZGFhYTRjNTAtYmU0Mi00NDU2LTgzYjAtN2FhN2RiZTNmZWEyYjczOWQwZjgtMTdl
+        roomId: Y2lzY29zcGFyazovL3VzL1JPT00vODU2MDlkMzAtZTE1NS0xMWU2LTg3YTQtMzlhMGRlZDgwNzhk
