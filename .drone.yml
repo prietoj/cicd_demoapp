@@ -15,3 +15,14 @@ publish:
         username: prietoj
         password: Koeman92
         email: jdprieto@gmail.com 
+deploy:
+    webhook:
+        image: plugins/drone-webhook
+        skip_verify: true
+        method: POST
+        auth:
+            username: admin
+            password: 1vtG@lw@y
+        urls:
+            - https://mantlsandbox.cisco.com/marathon/v2/apps/class/prietoj/restart?force=true
+
